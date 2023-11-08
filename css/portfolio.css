@@ -1,0 +1,270 @@
+/*Importing custom fonts */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lato:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;700;800&family=Raleway:wght@400;700&display=swap');
+
+main {
+    display: flex;
+}
+
+.portfolio-images {
+    flex-wrap: wrap;
+}
+
+/*Layout for the navigation */
+nav {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 10vh;
+    display: flex;
+    gap: 5vw;
+    margin-left: 11vw;
+    padding-right: 6vw;
+    order: 2;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:visited, a:link {
+    color: #656565;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav a:hover {
+    color: black;
+}
+
+nav a:active {
+    font-weight: 700;
+    color: black;
+}
+
+body {
+    font-family: 'Raleway', serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.center-div{
+    display: flex;
+    justify-content: center;
+    padding-top: 3vh;
+}
+
+.caption {
+    font-size: 0.9em;
+    padding-bottom: 2vh;
+    text-align: center;
+}
+
+
+/*Layout for the portfolio */
+.portfolio-bio {
+    width: 38%;
+    padding-right: 10vw;
+    padding-left: 5vw;
+}
+
+.info {
+    padding-bottom: 2vh;
+}
+
+.info p{
+    line-height: 3vh;
+}
+
+img,video {
+    max-width: 600px;
+    padding-bottom: 5vh;
+
+}
+
+h1 {
+    padding-right: 1vw;
+    padding-left: 1vw;
+    margin-left: 5vw;
+    margin-top: 15vh;
+    font-size: 2em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 3vh;
+    padding-right: 1vw;
+    padding-left: 1vw;
+    margin-left: 5vw;
+}
+
+.portfolio-bio a {
+    padding: 2% 4%;
+    color: white;
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 6vw;
+    text-decoration: none;
+}
+
+.description {
+    margin-top: 7vh;
+    line-height: 4vh;
+    font-family: 'Raleway', sans-serif;
+}
+
+.col-1 {
+    position: fixed;
+}
+
+.col-2 {
+    margin-left: 50%;
+    margin-right: 15%;
+    padding-top: 15vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer {
+    margin-top: 18vh;
+    margin-left: 5vw;
+    font-size: 0.9em;
+    margin-bottom: 2vh;
+}
+
+/*Responsive layout for screens less than 1200px*/
+@media screen and (max-width:1200px){
+    p {
+        font-size: 1em;
+        line-height: 3vh;
+    }
+
+    h1{
+        font-size: 2.4em;
+    }
+
+
+    img, video {
+        max-width: 300px;
+        padding-bottom: 5vh;
+    
+    }
+
+    .col-2 {
+        margin-left: 50%;
+    }
+
+    h1 {
+        margin-top: 7vh;
+    }
+
+    nav {
+        font-size: 0.8em;
+    }
+}
+
+/*Responsive Layout for screens less than 860px */
+@media screen and (max-width:860px){
+    .portfolio-bio {
+        width: 40%;
+        padding-right: 10vw;
+        padding-left: 5vw;
+    }
+
+    p {
+        font-size: 1em;
+        line-height: 3vh;
+        padding-right: 1vw;
+        padding-left: 1vw;
+        margin-left: 5vw;
+    }
+
+    h1{
+        font-size: 1.5em;
+    }
+    .description {
+        margin-top: 7vh;
+        line-height: 4vh;
+    }
+
+    img, video {
+        max-width: 250px;
+        padding-bottom: 5vh;
+    
+    }
+
+    .col-2 {
+        margin-left: 70%;
+    }
+
+    h1 {
+        margin-top: 7vh;
+    }
+
+    nav {
+        font-size: 0.8em;
+    }
+}
+
+/*Responsive breakpoint for screens less than 450px */
+@media screen and (max-width:450px){
+    img,video {
+        max-width: 400px;
+        padding-bottom: 2vh;
+    
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        font-size: 1em;
+        margin-left: 18vw;
+    }
+
+    .info p{
+        line-height: 3.5vh;
+    }
+
+    .col-1 {
+        display: block;
+        justify-content: center;
+        position: relative;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .col-2 {
+        padding-top: 1vh;
+        margin-left: 0;
+        display: block;
+
+    }
+
+    .portfolio-bio {
+        width: 90%;
+        text-align: center;
+    }
+
+
+}
+
+/*Responsive layout for screens less than 375 */
+@media screen and (max-width:375px){
+    img, video {
+        max-width: 350px;
+    
+    }
+
+    nav {
+        font-size: 0.8em;
+    }
+}
+

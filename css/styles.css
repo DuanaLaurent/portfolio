@@ -1,0 +1,461 @@
+/* Imoporting fonts */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lato:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;700;800&family=Raleway:wght@400;700&display=swap');
+
+/* Layout for navigation */
+nav {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    display: flex;
+    flex-wrap: none;
+    text-transform: uppercase;
+    margin-bottom: 3vh;
+    margin-top: 2vh;
+}
+
+nav .links {
+    margin-top: 2vh;
+    margin-left: 50%;
+    display: flex;
+    gap: 50px;
+    font-size: 1.2em;
+}
+
+/* Layout for navigation links */
+a {
+    text-decoration: none;
+}
+
+nav a:visited, a:link {
+    color: black;
+}
+
+nav a:hover {
+   color: rgb(175, 175, 175);
+}
+
+nav a:active {
+    font-weight: 800;
+}
+
+body {
+    font-family: 'Lora', serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+main a, #skills a {
+    padding: 1% 3%;
+    color: white;
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo-box {
+    margin-left: 12vw;
+    margin-right: 6vw;
+}
+
+nav h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    margin-left: 10vw;
+    
+}
+
+nav .bold {
+    font-weight: 800;
+}
+
+.portfolio-row {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+
+#skills h2 {
+    font-size: 4em;
+    padding-right: 3vw;
+    padding-left: 3vw;
+    margin-left: 12vw;
+}
+
+#contact-subhead {
+    padding-right: 3vw;
+    padding-left: 3vw;
+    margin-left: 12vw;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+main p{
+    padding-right: 3vw;
+    padding-left: 3vw;
+    margin-left: 12vw;
+}
+
+/* Layout for contact form */
+form {
+    padding-right: 3vw;
+    padding-left: 2vw;
+    margin-left: 12vw;
+    font-family: 'Lora', serif;
+}
+
+.form-field {
+    padding: 1%;
+}
+
+form input, textarea {
+    width: 50%;
+    padding: 1%;
+    border: none;
+    background-color: #f1f1f1;
+}
+
+form label {
+    padding-right: 1%;
+}
+
+#message {
+    padding-bottom: 10vh;
+}
+
+#message-label {
+    padding-bottom: 6%;
+}
+
+#submit {
+    width: 10%;
+    background-color: black;
+    color: white;
+}
+
+.input-field {
+    padding-top: 2vh;
+}
+
+
+#skills h3 {
+    padding-right: 3vw;
+    padding-left: 3vw;
+    margin-left: 12vw;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Layout for portfolio gallery */
+.portfolio-row {
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+.portfolio-row img {
+    width: 33.3%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+}
+
+main h1 {
+    font-size: 5em;
+    padding-right: 3vw;
+    padding-left: 3vw;
+    margin-left: 12vw;
+}
+
+#about-me p {
+    margin-right: 20%;
+    line-height: 2em;
+}
+
+
+#skills p {
+    margin-right: 10%;
+    line-height: 2em;
+}
+
+#skills a {
+    margin-left: 15vw;
+}
+
+#skills-button {
+    padding-top: 4vh;
+}
+
+.skill-list {
+    padding-bottom: 1vh;
+}
+
+#about-me {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#contact-head {
+    font-size: 3.5em;
+}
+
+
+#about-me img {
+    width: 500px;
+    height: auto;
+}
+
+#bio-image {
+    margin: 0 auto;
+    padding-right: 10vw;
+    width: 50%;
+}
+
+hr {
+    margin: 0;
+    background-color: #e0e0e0;
+    border: none;
+    height: 1px;
+    position:inherit;
+}
+
+
+
+.image-title {
+    font-size: 1.2em;
+    padding-top: 2vh;
+}
+
+.image-text {
+    font-style: italic;
+}
+
+/* Breakpoint at 1366px*/
+@media screen and (max-width:1366px){
+
+    #about-me p {
+        margin-right: 10%;
+        line-height: 2em;
+    }
+
+    nav .links {
+        margin-top: 3vh;
+        font-size: 1.3em;
+        margin-left: 40vw;
+    }
+
+    #bio-image {
+        position: relative;
+        margin-top: 3%;
+        margin-left: 7%;
+        justify-content: right;
+    }
+
+    #about-me p {
+        margin-right: 5%;
+        width: 85%;
+        line-height: 2em;
+    }
+
+
+    .portfolio {
+        padding-top: 3%;
+    }
+}
+
+/* Breakpoint at 1200px*/
+@media screen and (max-width:1200px){
+    #bio-image {
+        margin-top: 5%;
+        margin-left: 8%;
+        justify-content: right;
+    }
+
+    .image-title {
+        font-size: 0.8em;
+        padding-top: 0vh;
+    }
+
+    .image-text {
+        font-size: 0.6em;
+        padding-bottom: 2%;
+    }
+
+    nav .links {
+        margin-top: 2vh;
+        margin-left: 30vw;
+
+    }
+
+
+}
+
+/* Breakpoint at 1024px*/
+@media screen and (max-width:1024px){
+
+    nav .links {
+        font-size: 1em;
+        margin-top: 3vh;
+    }
+
+    .form-field {
+        padding: 1%;
+    }
+    
+    form input, textarea {
+        width: 70%;
+        padding: 4%;
+        border: none;
+        background-color: #f1f1f1;
+    }
+
+    #submit {
+        width: 20%;
+        padding: 2% 3%;
+        font-size: 1em;
+        background-color: black;
+        color: white;
+    }
+}
+
+/* Breakpoint at 800px*/
+@media screen and (max-width:900px){
+    #about-me p {
+        margin-right: 5%;
+        width: 100%;
+        line-height: 2em;
+    }
+
+    #bio-image {
+        position: relative;
+        margin-top: 50%;
+        margin-left: 5%;
+        justify-content: right;
+    }
+
+    #about-me img {
+        max-width: 400px;
+        display: block;
+        position: relative;
+    }
+
+    main {
+        display: block;
+    }
+
+
+    nav .links {
+        margin-top: 4vh;
+        margin-left: 20%;
+        display: flex;
+        gap: 40px;
+    }
+
+
+    .image-title {
+        font-size: 0.8em;
+        padding-top: 0vh;
+    }
+
+    .image-text {
+        font-size: 0.6em;
+    }
+
+    footer {
+        font-size: 0.7em;
+    }
+    
+    .form-field {
+        padding: 1%;
+    }
+    
+    form input, textarea {
+        width: 70%;
+        padding: 4%;
+        border: none;
+        background-color: #f1f1f1;
+    }
+
+    #submit {
+        width: 20%;
+        font-size: 1em;
+        background-color: black;
+        color: white;
+    }
+}
+
+nav {
+    margin-bottom: 1vh;
+}
+
+/* Breakpoint at 700px*/
+@media screen and (max-width:700px){
+    #contact-head {
+        font-size: 1.6em;
+    }
+
+    #contact-subhead{
+        font-size: 1.4em;
+    }
+
+    nav .links {
+        font-size: 0.7em;
+        
+    }
+
+    nav{
+        display: block;
+    }
+
+    nav .links {
+        display: flex;
+        font-size: 1em;
+        gap: 50px;
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .portfolio-row {
+        display: block;
+    }
+    
+    .portfolio-row img {
+        width: 100%;
+        height: auto;
+    }
+
+    nav h1 {
+        font-size: 2em;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    #about-me h1 {
+        font-size: 2.4em;
+    }
+
+    #about-me {
+        display: block;
+        font-size: 1em;
+        width: 70%;
+        
+    }
+
+    #bio-image {
+        position: relative;
+        margin-top: 0;
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    #skills-button {
+        display: flex;
+        justify-content: center;
+        margin-left: 0;
+        padding-bottom: 4%;
+    }
+
+    #skills a {
+        margin-left: 0;
+    }
+}
